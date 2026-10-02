@@ -1,0 +1,231 @@
+{
+  "users": [
+    {
+      "id": "candidate-001",
+      "name": "Alex Morgan",
+      "email": "alex@example.com",
+      "role": "Software Developer",
+      "experience": "Fresher",
+      "skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "MongoDB"
+      ],
+      "avatar": "AM"
+    }
+  ],
+  "questionBank": [
+    {
+      "id": "q1",
+      "type": "intro",
+      "difficulty": "Easy",
+      "text": "Tell me about yourself and the kind of software development work you enjoy.",
+      "tags": [
+        "communication",
+        "introduction"
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "technical",
+      "difficulty": "Easy",
+      "text": "What is the difference between let, const, and var in JavaScript?",
+      "tags": [
+        "javascript",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "technical",
+      "difficulty": "Medium",
+      "text": "Explain what an API is and how a frontend application can communicate with a backend.",
+      "tags": [
+        "api",
+        "web"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "technical",
+      "difficulty": "Medium",
+      "text": "What is the purpose of asynchronous programming in JavaScript? Give an example.",
+      "tags": [
+        "javascript",
+        "async"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "problem-solving",
+      "difficulty": "Medium",
+      "text": "A web page is loading slowly. How would you investigate the problem and improve its performance?",
+      "tags": [
+        "performance",
+        "debugging"
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "behavioral",
+      "difficulty": "Medium",
+      "text": "Tell me about a time you faced a difficult bug or project problem. How did you solve it?",
+      "tags": [
+        "problem-solving",
+        "ownership"
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "behavioral",
+      "difficulty": "Medium",
+      "text": "How do you handle feedback when someone suggests a major change to your work?",
+      "tags": [
+        "communication",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "technical",
+      "difficulty": "Hard",
+      "text": "Explain the difference between SQL and NoSQL databases and when you might choose each.",
+      "tags": [
+        "database",
+        "architecture"
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "technical",
+      "difficulty": "Hard",
+      "text": "How would you design a simple authentication flow for a web application?",
+      "tags": [
+        "security",
+        "backend"
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "closing",
+      "difficulty": "Easy",
+      "text": "Why are you interested in this role, and what would you like to learn next?",
+      "tags": [
+        "motivation",
+        "growth"
+      ]
+    }
+  ],
+  "interviews": [
+    {
+      "id": "int-1790922966789-1rchh2",
+      "userId": "candidate-001",
+      "role": "Software Developer",
+      "difficulty": "Mixed",
+      "status": "completed",
+      "questionIds": [
+        "q1",
+        "q9",
+        "q4",
+        "q5",
+        "q8",
+        "q7",
+        "q10"
+      ],
+      "currentIndex": 0,
+      "answers": [],
+      "createdAt": "2026-10-02T06:36:06.790Z",
+      "completedAt": "2026-10-02T06:36:41.464Z",
+      "overallScore": 0,
+      "metrics": {
+        "communication": 0,
+        "technical": 0,
+        "problemSolving": 0,
+        "confidence": 0
+      }
+    },
+    {
+      "id": "int-1790923006986-og5jwp",
+      "userId": "candidate-001",
+      "role": "Software Developer",
+      "difficulty": "Mixed",
+      "status": "completed",
+      "questionIds": [
+        "q1",
+        "q4",
+        "q7",
+        "q8",
+        "q5",
+        "q6",
+        "q10"
+      ],
+      "currentIndex": 0,
+      "answers": [],
+      "createdAt": "2026-10-02T06:36:46.986Z",
+      "completedAt": "2026-10-02T06:36:53.469Z",
+      "overallScore": 0,
+      "metrics": {
+        "communication": 0,
+        "technical": 0,
+        "problemSolving": 0,
+        "confidence": 0
+      }
+    },
+    {
+      "id": "int-1790923059897-sjcaaz",
+      "userId": "candidate-001",
+      "role": "Software Developer",
+      "difficulty": "Mixed",
+      "status": "in-progress",
+      "questionIds": [
+        "q1",
+        "q7",
+        "q6",
+        "q2",
+        "q4",
+        "q3",
+        "q10"
+      ],
+      "currentIndex": 0,
+      "answers": [],
+      "createdAt": "2026-10-02T06:37:39.897Z",
+      "completedAt": null,
+      "overallScore": 0,
+      "metrics": {
+        "communication": 0,
+        "technical": 0,
+        "problemSolving": 0,
+        "confidence": 0
+      }
+    },
+    {
+      "id": "int-1790923062058-bs71gf",
+      "userId": "candidate-001",
+      "role": "Software Developer",
+      "difficulty": "Mixed",
+      "status": "in-progress",
+      "questionIds": [
+        "q1",
+        "q6",
+        "q9",
+        "q2",
+        "q3",
+        "q4",
+        "q10"
+      ],
+      "currentIndex": 0,
+      "answers": [],
+      "createdAt": "2026-10-02T06:37:42.058Z",
+      "completedAt": null,
+      "overallScore": 0,
+      "metrics": {
+        "communication": 0,
+        "technical": 0,
+        "problemSolving": 0,
+        "confidence": 0
+      }
+    }
+  ]
+}

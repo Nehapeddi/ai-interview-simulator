@@ -1,0 +1,16 @@
+{
+  "name": "ai-interview-simulator",
+  "version": "1.0.0",
+  "description": "A full-stack AI-style interview simulator with webcam preview, adaptive questions, scoring, dashboard analytics, and local JSON persistence.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
