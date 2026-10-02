@@ -1,0 +1,8 @@
+const u=JSON.parse(localStorage.iqUser||'{"name":"Alex Morgan","role":"Software Developer"}');
+welcome.textContent=`Hi, ${u.name.split(' ')[0]} 👋`;sideName.textContent=u.name;sideAvatar.textContent=u.name.split(' ').map(x=>x[0]).join('').slice(0,2).toUpperCase();
+function start(){localStorage.iqRole=u.role||'Software Developer';location='/interview.html'}
+function setBar(id,v){document.getElementById(id).textContent=v+'%';document.getElementById(id+'bar').style.width=v+'%'}
+async function load(){try{const d=await fetch('/api/dashboard').then(r=>r.json());avg.textContent=d.stats.averageScore+'%';count.textContent=d.stats.interviews;best.textContent=d.stats.bestScore+'%';ready.textContent=Math.round(d.stats.averageScore*.7+Math.min(d.stats.interviews*6,30))+'%';setBar('tech',d.breakdown.technical);setBar('comm',d.breakdown.communication);setBar('prob',d.breakdown['problem-solving']);setBar('conf',d.breakdown.confidence);
+recent.innerHTML=d.recent.length?d.recent.map(x=>`<div class="row"><div><b>${x.role}</b><small>${new Date(x.date).toLocaleDateString()} · ${x.difficulty} · ${x.answered}/${x.total} answered</small></div><span class="score">${x.status==='completed'?x.score+'%':'In progress'}</span></div>`).join(''):'<div class="empty">No sessions yet. Start your first interview.</div>';
+tip.textContent=d.stats.averageScore===0?'Start one session and answer with a specific example.':d.breakdown.communication<d.breakdown.technical?'Try the STAR structure: situation, task, action, result.':d.breakdown.technical<70?'Review fundamentals and explain each concept with a practical example.':'Keep practicing concise, specific, outcome-focused answers.'}catch(e){recent.textContent='Backend is not available. Run npm start.'}}
+load();

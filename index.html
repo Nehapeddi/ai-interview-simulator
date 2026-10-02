@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InterviewIQ | AI Interview Simulator</title><link rel="stylesheet" href="/css/styles.css"></head>
+<body class="auth-page">
+<section class="auth-visual"><div class="brand"><b>IQ</b> InterviewIQ</div>
+<div class="hero-copy"><span>AI-POWERED PRACTICE</span><h1>Practice smarter.<br><em>Interview stronger.</em></h1>
+<p>Run realistic mock interviews, answer by text or voice, and receive instant feedback on clarity, confidence, communication and technical reasoning.</p>
+<div class="pills"><i>✦ Adaptive questions</i><i>◉ Voice-ready</i><i>▣ Instant analytics</i></div></div>
+<div class="float-card fc1"><strong>85%</strong><small>Readiness</small></div><div class="float-card fc2"><strong>AI</strong><small>Feedback live</small></div></section>
+<section class="auth-wrap"><div class="auth-card"><div class="mobile-brand"><b>IQ</b> InterviewIQ</div>
+<span class="label">WELCOME</span><h2>Start your interview journey</h2><p>Demo mode is enabled. No API key and no MongoDB account are required.</p>
+<form id="loginForm"><label>Name<input id="name" value="Alex Morgan" required></label>
+<label>Email<input id="email" type="email" value="alex@example.com" required></label>
+<label>Target role<select id="role"><option>Software Developer</option><option>Frontend Developer</option><option>Backend Developer</option><option>Full Stack Developer</option><option>Java Developer</option><option>Data Analyst</option></select></label>
+<button class="primary">Enter Interview Studio →</button></form>
+<div class="note">✓ Runs locally with Node.js + Express + JSON storage.</div></div></section>
+<script>
+document.getElementById('loginForm').onsubmit=e=>{e.preventDefault();localStorage.iqUser=JSON.stringify({name:name.value,email:email.value,role:role.value});location='/dashboard.html'}
+</script></body></html>

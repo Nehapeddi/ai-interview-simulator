@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InterviewIQ | Live Interview</title><link rel="stylesheet" href="/css/styles.css"></head>
+<body class="interview"><header class="ibar"><div class="brand"><b>IQ</b> InterviewIQ</div><div><span class="live">● LIVE AI INTERVIEW</span><small id="roleLabel">Software Developer</small></div><button class="ghost" id="end">End session</button></header>
+<main class="workspace"><section><div class="video"><video id="camera" autoplay muted playsinline></video><div id="fallback">◉<b>Camera unavailable</b><small>Text mode is still available.</small></div><div class="vtop"><span>● LIVE</span><span id="timer">00:00</span></div><div class="vbottom"><span><b id="videoName">Alex Morgan</b><small>Candidate</small></span><div><button id="mic">🎙</button><button id="cam">▣</button><button class="hang" id="finish">☎</button></div></div></div>
+<article class="question"><div class="qmeta"><b id="qtype">INTRODUCTION</b><span id="counter">Question 1 of 7</span></div><h2 id="question">Preparing your first question...</h2>
+<textarea id="answer" placeholder="Type your answer here, or use voice input..."></textarea><div class="tools"><small id="words">0 words</small><button class="soft" id="voice">🎙 Use voice</button></div>
+<div class="submitrow"><small>Tip: use a clear example and explain the result.</small><button class="primary" id="submit">Submit answer →</button></div></article></section>
+<aside><article class="panel"><span class="label">SESSION</span><h3>Your progress</h3><div class="progressCircle" id="circle">0%</div><p id="progress">0 of 7 questions answered</p><div id="bars" class="bars"></div></article>
+<article class="panel"><span class="label">INTERVIEW MAP</span><h3>Question list</h3><div id="map"></div></article>
+<article class="panel coach">✦ <div><b>AI Coach</b><p id="coach">Take a breath, speak clearly, and explain your thinking.</p></div></article></aside></main>
+<div class="modal" id="modal"><div class="result"><button class="close" id="close">×</button><span class="label">INTERVIEW COMPLETE</span><h2>Session analyzed.</h2><div class="final"><strong id="score">0</strong><span>/100</span><p id="summary"></p></div><div class="metrics"><b>Technical <em id="ft">0%</em></b><b>Communication <em id="fc">0%</em></b><b>Problem solving <em id="fp">0%</em></b><b>Confidence <em id="ff">0%</em></b></div><button class="primary" onclick="location='/dashboard.html'">Back to dashboard</button></div></div>
+<script src="/js/interview.js"></script></body></html>

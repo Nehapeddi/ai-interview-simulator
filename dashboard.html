@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InterviewIQ | Dashboard</title><link rel="stylesheet" href="/css/styles.css"></head>
+<body class="dash"><aside class="side"><div class="brand"><b>IQ</b> InterviewIQ</div>
+<nav><a class="active" href="/dashboard.html">⌂ Overview</a><a href="/interview.html">◎ New Interview</a><a href="#history">◷ History</a><a href="#skills">◈ Analytics</a><a href="/admin.html">▣ Recruiter View</a></nav>
+<div class="profile"><div class="avatar" id="sideAvatar">AM</div><div><b id="sideName">Alex Morgan</b><small>Candidate</small></div></div></aside>
+<main class="main"><header><div><span class="label">INTERVIEW STUDIO</span><h1 id="welcome">Hi, Alex 👋</h1><p>Build confidence one answer at a time.</p></div><span class="ready">● System ready</span></header>
+<section class="hero"><div><span class="label">YOUR NEXT STEP</span><h2>Ready for a realistic<br><em>AI mock interview?</em></h2><p>Choose your role and practice a structured session with instant performance analytics.</p><button class="primary" onclick="start()">Start New Interview →</button></div><div class="orbit"><b>AI</b><i>Technical</i><i>Behavioral</i><i>Feedback</i></div></section>
+<section class="stats"><article><small>AVERAGE SCORE</small><strong id="avg">0%</strong><span>Completed sessions</span></article><article><small>INTERVIEWS</small><strong id="count">0</strong><span>Practice sessions</span></article><article><small>BEST SCORE</small><strong id="best">0%</strong><span>Personal record</span></article><article><small>READINESS</small><strong id="ready">0%</strong><span>Practice signal</span></article></section>
+<section class="grid"><article class="panel" id="history"><div class="head"><div><span class="label">PRACTICE LOG</span><h3>Recent interviews</h3></div><a href="/admin.html">View all →</a></div><div id="recent">Loading...</div></article>
+<article class="panel" id="skills"><div class="head"><div><span class="label">PERFORMANCE</span><h3>Skill breakdown</h3></div></div>
+<div class="skill"><span>Technical <b id="tech">0%</b></span><i><em id="techbar"></em></i></div><div class="skill"><span>Communication <b id="comm">0%</b></span><i><em id="commbar"></em></i></div>
+<div class="skill"><span>Problem solving <b id="prob">0%</b></span><i><em id="probbar"></em></i></div><div class="skill"><span>Confidence <b id="conf">0%</b></span><i><em id="confbar"></em></i></div>
+<div class="tip">✦ <span><b>AI practice tip</b><br><small id="tip">Complete an interview to unlock personalized feedback.</small></span></div></article></section></main>
+<script src="/js/dashboard.js"></script></body></html>
